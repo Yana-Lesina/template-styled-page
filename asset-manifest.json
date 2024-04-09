@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/static/js/main.995ae9c6.js",
+    "static/media/desert-image.png": "/static/media/desert-image.6ce1a1a5a2128ce739b1.png",
+    "index.html": "/index.html",
+    "main.995ae9c6.js.map": "/static/js/main.995ae9c6.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.995ae9c6.js"
+  ]
+}
