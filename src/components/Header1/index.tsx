@@ -1,11 +1,13 @@
-import { Header1 as Header1Styled } from "./styles";
+import styled from "styled-components";
 
-type Props = {
-  children: string;
-};
-
-const Header1 = ({ children }: Props) => {
-  return <Header1Styled>{children} </Header1Styled>;
-};
+const Header1 = styled.h1`
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-align: left;
+`;
 
 export { Header1 };

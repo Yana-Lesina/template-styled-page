@@ -1,39 +1,31 @@
-import React from "react";
 import Intro from "./assets/desert-image.png";
-import { Main, Section, Header1, Paragraph } from "./components/.";
-
-import styled from "styled-components";
-
-type Props = {
-  src: HTMLImageElement | string;
-};
-
-const IntroImageS = styled.image.attrs(({ src }) => ({
-  src: src,
-  alt: "intro",
-}))`
-  width: 100%;
-`;
-
-const IntroImage = () => <IntroImageS src={Intro} />;
+import {
+  Card,
+  Header1,
+  Paragraph,
+  IntroImage,
+  ContentContainer,
+  ButtonWrapper,
+  Button,
+} from "./components/.";
 
 function App() {
   return (
     <div className="App">
-      <Main>
-        <Section>
-          <IntroImage />
+      <Card>
+        <IntroImage src={Intro} alt="intro" />
+        <ContentContainer>
           <Header1>Headline</Header1>
           <Paragraph>
             Faucibus. Faucibus. Sit sit sapien sit
             <br /> tempusrisu ut. Sit molestie ornare in venen.
           </Paragraph>
-          <div>
-            <button>See more</button>
-            <button>Save</button>
-          </div>
-        </Section>
-      </Main>
+          <ButtonWrapper>
+            <Button type="contained">See more</Button>
+            <Button type="outlined">Save</Button>
+          </ButtonWrapper>
+        </ContentContainer>
+      </Card>
     </div>
   );
 }

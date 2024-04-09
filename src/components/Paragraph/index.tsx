@@ -1,11 +1,10 @@
-import { Paragraph as ParagraphStyled } from "./styles";
+import styled from "styled-components";
 
-type Props = {
-  children: (string | JSX.Element)[];
-};
-
-const Paragraph = ({ children }: Props) => {
-  return <ParagraphStyled>{children}</ParagraphStyled>;
-};
+const Paragraph = styled.p`
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
+  color: #abb3ba;
+`;
 
 export { Paragraph };
